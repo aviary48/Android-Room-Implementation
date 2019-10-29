@@ -1,6 +1,7 @@
 package com.eugene.sampleimplementation;
 
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -22,7 +23,7 @@ public interface WordDao {
     //method to get all words ordered alphabetically
 
     @Query("SELECT * from word_table ORDER BY word ASC")
-    List<Word> getAlphabetizedWords();
+  LiveData<List<Word>> getAlphabetizedWords();
 
 
 }
