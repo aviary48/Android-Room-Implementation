@@ -22,5 +22,5 @@ public class Word {
 
     public Word(@NonNull  String word) { this.mWord = word;}
 
-    public String getmWord(){ return this.mWord;}
+    public String getWord(){ return this.mWord;}
 }
